@@ -1,0 +1,32 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); color: #333; margin:0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+header { background: linear-gradient(135deg, #006600, #004d00); color: white; text-align: center; padding: 3rem 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+
+.intro { text-align: center; font-size: 1.1rem; margin: 2rem 0; color: #444; }
+
+.bourses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.8rem; }
+.bourse-card { background: white; border-radius: 12px; padding: 1.8rem; box-shadow: 0 6px 15px rgba(0,0,0,0.12); transition: transform 0.3s, box-shadow 0.3s; }
+.bourse-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,102,0,0.2); }
+.logo { width: 100px; height: auto; display: block; margin: 0 auto 1rem; border-radius: 8px; }
+.bourse-card h2 { text-align: center; color: #006600; margin-bottom: 0.8rem; }
+.bourse-card p { margin: 0.6rem 0; }
+.bourse-card a { display: inline-block; margin-top: 1rem; background: #cc0000; color: white; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: bold; }
+.bourse-card a:hover { background: #990000; }
+
+/* Météo widget haut droit */
+.meteo-widget { position: fixed; top: 20px; right: 20px; background: rgba(255,255,255,0.92); border-radius: 12px; padding: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.15); z-index: 1000; width: 220px; font-size: 0.9rem; backdrop-filter: blur(8px); }
+.meteo-widget h3 { font-size: 1rem; margin-bottom: 0.8rem; text-align: center; color: #006600; }
+
+/* Animation nuage simple */
+.nuage-animation { position: absolute; top: -30px; left: -50px; width: 100px; height: 40px; background: rgba(255,255,255,0.7); border-radius: 50px; animation: nuage 20s linear infinite; opacity: 0.6; }
+.nuage-animation::before, .nuage-animation::after { content: ''; position: absolute; background: rgba(255,255,255,0.7); border-radius: 50%; }
+.nuage-animation::before { width: 60px; height: 60px; top: -30px; left: 20px; }
+.nuage-animation::after { width: 80px; height: 80px; top: -40px; right: 10px; }
+@keyframes nuage { 0% { transform: translateX(-150px); } 100% { transform: translateX(300px); } }
+
+footer { background: #004d00; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+
+/* Responsive */
+@media (max-width: 768px) { .meteo-widget { width: 180px; right: 10px; top: 10px; font-size: 0.85rem; } }
