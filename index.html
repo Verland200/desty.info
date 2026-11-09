@@ -1,73 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Congo Actu 2026 – Actualités Brazzaville & Pointe-Noire</title>
-    <meta name="description" content="Actualités en temps réel sur la République du Congo : élections 2026, économie, société, Brazzaville, Pointe-Noire.">
-    <link rel="stylesheet" href="style.css">
-    <!-- Pour SEO et partage WhatsApp/Facebook -->
-    <meta property="og:title" content="Congo Actu 2026">
-    <meta property="og:description" content="Infos indépendantes sur le Congo Brazzaville">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Congo+Actu+2026"> <!-- Change par ta vraie image -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Congo Actu | Actualités du Congo-Brazzaville</title>
+  <meta name="description" content="Congo Actu : suivez l'actualité de la République du Congo, notamment à Brazzaville et Pointe-Noire. Politique, économie, société et informations pratiques.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="La rédaction de Congo Actu">
+  <meta name="theme-color" content="#10233f">
+
+  <!-- Adresse canonique : conserver cette URL tant que le site reste hébergé ici. -->
+  <link rel="canonical" href="https://verland200.github.io/desty.info/">
+
+  <!-- Partage Facebook, WhatsApp et autres réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Congo Actu">
+  <meta property="og:title" content="Congo Actu | Actualités du Congo-Brazzaville">
+  <meta property="og:description" content="L'actualité de la République du Congo : politique, économie, société et vie quotidienne.">
+  <meta property="og:url" content="https://verland200.github.io/desty.info/">
+  <!-- Remplace cette image par une vraie image de partage de 1200 x 630 px. -->
+  <meta property="og:image" content="https://verland200.github.io/desty.info/assets/images/congo-actu-social.jpg">
+  <meta property="og:image:alt" content="Congo Actu - Actualités de la République du Congo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Congo Actu | Actualités du Congo-Brazzaville">
+  <meta name="twitter:description" content="L'actualité de la République du Congo : politique, économie et société.">
+  <meta name="twitter:image" content="https://verland200.github.io/desty.info/assets/images/congo-actu-social.jpg">
+
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Données structurées de la page d'accueil -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Congo Actu",
+    "url": "https://verland200.github.io/desty.info/",
+    "description": "Média numérique indépendant consacré à l'actualité de la République du Congo.",
+    "inLanguage": "fr"
+  }
+  </script>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="/">Congo Actu 2026</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="/articles/elections-2026.html">Élections 2026</a></li>
-                    <li><a href="#">Politique</a></li>
-                    <li><a href="#">Économie</a></li>
-                    <li><a href="Bourse\index.html">Bourse</a></li>
-                    <li><a href="#">Société</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-    <main class="container">
-        <section class="hero">
-            <h2>Actualités du jour – République du Congo</h2>
-            <p>Élection présidentielle 15 mars 2026 | Suivi en direct Brazzaville & Pointe-Noire</p>
-        </section>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <a href="./" aria-label="Congo Actu - Accueil">
+          <span class="brand-name">Congo Actu</span>
+          <span class="brand-tagline">Comprendre l'actualité du Congo</span>
+        </a>
+      </div>
 
-        <section class="articles">
-            <!-- Article exemple 1 -->
-            <article class="card">
-                <h3>Présidentielle 2026 : scrutin fixé au 15 mars</h3>
-                <p class="meta">23 janvier 2026 – Brazzaville</p>
-                <p>Le gouvernement a convoqué le corps électoral. Sassou N'Guesso investi par le PCT, opposition mobilisée...</p>
-                <a href="articles/elections-2026.html" class="read-more">Lire la suite →</a>
-            </article>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="./" aria-current="page">Accueil</a></li>
+          <li><a href="#politique">Politique</a></li>
+          <li><a href="#economie">Économie</a></li>
+          <li><a href="./Bourse/index.html">Bourse</a></li>
+          <li><a href="#societe">Société</a></li>
+          <li><a href="#redaction">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <!-- Ajoute d'autres articles ici en dupliquant le bloc -->
-            <article class="card">
-                <h3>Sommet CEMAC à Brazzaville : ce qu'il faut retenir</h3>
-                <p class="meta">20 janvier 2026</p>
-                <p>Discussions sur intégration régionale, économie pétrolière et défis communs...</p>
-                <a href="#" class="read-more">Lire la suite →</a>
-            </article>
+  <main id="contenu" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">République du Congo</p>
+      <h1 id="hero-title">L'actualité du Congo-Brazzaville</h1>
+      <p>
+        Politique, économie, société et vie quotidienne :
+        retrouvez les informations et les analyses consacrées au Congo,
+        notamment à Brazzaville et à Pointe-Noire.
+      </p>
+    </section>
 
-            <!-- Encore un -->
-            <article class="card">
-                <h3>Réforme éducation : nouveau projet de loi en débat</h3>
-                <p class="meta">18 janvier 2026</p>
-                <p>Focus sur gratuité et qualité dans les écoles congolaises...</p>
-                <a href="#" class="read-more">Lire la suite →</a>
-            </article>
-        </section>
-    </main>
+    <section class="articles" aria-labelledby="latest-title">
+      <div class="section-heading">
+        <h2 id="latest-title">Articles et dossiers</h2>
+        <p>Consultez les publications de la rédaction.</p>
+      </div>
 
-    <footer>
-        <div class="container">
-            <p>© 2026 Congo Actu – Site indépendant d'informations sur la République du Congo.<br>
-            Contact : tonnumero@whatsapp.com | Sources : Adiac, RFI, Jeune Afrique, etc.<br>
-            Pas de fake news – Partage libre.</p>
-        </div>
-    </footer>
+      <div class="article-grid">
+        <article class="card" id="politique">
+          <p class="category-label">Politique · Archives</p>
+          <h3>
+            <a href="./articles/elections-2026.html">
+              Présidentielle 2026 : dossier et repères
+            </a>
+          </h3>
+          <p class="meta">
+            <time datetime="2026-01-23">23 janvier 2026</time>
+            <span aria-hidden="true"> · </span>
+            Brazzaville
+          </p>
+          <p>
+            Retrouvez le dossier consacré au scrutin présidentiel de mars 2026.
+            Consultez l'article pour connaître les éléments publiés et leurs sources.
+          </p>
+          <a href="./articles/elections-2026.html" class="read-more">
+            Lire l'article
+          </a>
+        </article>
+
+        <article class="card" id="economie">
+          <p class="category-label">Économie · À compléter</p>
+          <h3>Économie congolaise : analyses et actualités</h3>
+          <p class="meta">Rubrique thématique</p>
+          <p>
+            Cette rubrique accueillera les informations vérifiées sur l'économie,
+            les entreprises, l'emploi et les finances en République du Congo.
+          </p>
+        </article>
+
+        <article class="card" id="societe">
+          <p class="category-label">Société · À compléter</p>
+          <h3>Société : comprendre les enjeux du quotidien</h3>
+          <p class="meta">Rubrique thématique</p>
+          <p>
+            Retrouvez ici les sujets liés à l'éducation, à la santé publique,
+            à la culture, aux transports et à la vie quotidienne.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial-note" id="redaction" aria-labelledby="editorial-title">
+      <h2 id="editorial-title">À propos de Congo Actu</h2>
+      <p>
+        Congo Actu est un projet de média numérique indépendant consacré à
+        l'actualité de la République du Congo. Les informations publiées doivent
+        être datées, vérifiées et accompagnées de sources identifiables.
+      </p>
+      <p>
+        Une information comporte une erreur ? Elle doit être signalée à la rédaction
+        afin qu'elle puisse être vérifiée et, si nécessaire, corrigée.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; 2026 Congo Actu. Média numérique indépendant consacré à la
+        République du Congo.
+      </p>
+      <p>
+        Les contenus doivent être vérifiés auprès de leurs sources avant toute
+        republication. Les dates affichées correspondent aux dates de publication.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
